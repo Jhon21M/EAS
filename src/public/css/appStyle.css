@@ -1,0 +1,78 @@
+*{
+     margin: 0;
+     padding: 0;
+}
+.contenedor-pantalla{
+     display: flex;
+}
+.contenedor-menu{
+     position: fixed;
+     background-color: #E6E6E6;
+     height: 100vh;
+     width: 20%;
+}
+.logo-eas {
+     width: 100%;
+     /* background:#014BA0; */
+     box-sizing: border-box;
+     margin-top: 25px;
+     height: 40px;
+     display: flex;
+     justify-content:flex-start;
+    }
+    .logo-eas img{
+     height: 80px;
+     font-weight: 50px;
+     margin-top: -18px;
+     
+}
+    .logo-eas h1{
+     font-family: 'Roboto', sans-serif;
+     font-weight: 600;
+     font-size: 38px;
+}
+.menu-1{
+     /* background:#faaf; */
+     width: 100%;
+     margin-top: 80px;
+     display: flex;
+     justify-content: center;
+     flex-direction: column;
+}
+.formato-sub {
+     /* background: #924343; */
+     display: flex;
+     margin-left: 12%;
+     align-items: center;
+     margin-top: 15px;
+}
+.sub{
+     margin-left: 19%;
+}
+.smenu h4{
+     margin-left: -6px;
+}
+.h4{
+     font-family: 'Roboto', sans-serif;
+     font-size: 20px;
+     font-weight: 550;
+     margin-left: 6px;
+}
+.separador{
+ height: 1px;
+ width: 65%;
+ background: #353232;
+}
+
+.h3{
+     font-family: 'Roboto', sans-serif;
+     font-weight: 545;
+     font-size: 18px;
+}
+.menu-2{
+     /* background:rgb(100, 13, 13); */
+     width: 100%;
+     display: flex;
+     justify-content: center;
+     flex-direction: column;
+}

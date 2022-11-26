@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <%- include ('partials/pago-head.ejs') %>
+
+ 
+    <title>Document</title>
+</head>
+<body>
+    <main>
+        <div class="banner">
+            <barra-navegacion> 
+       
+            </barra-navegacion> 
+            <div class="cont-text">
+                <h2>Optimise su empresa de forma facil y rapida con <br> <span>EAS</span></h2>
+            <p> Las grandes cosas en los negocios nunca son realizadas por una persona. Son hechas por un equipo.!</p>
+            </div>
+            <img src="./Recursos/Imagenes/Figura-pantalla-premium-1.png" alt="">
+        </div>
+        <div class="contenedor">
+           
+           <form action="">
+            <div class="columna1p columnap">
+               
+                  <h2 class="titulo">Informacion de la factura</h2>
+                  <div class="linias">
+                    <div class="linia">
+                        <p>Nombre de la empresa.</p>
+                        <input placeholder="Ingrese nombre de empresa" class="caja" type="text">
+                    </div>
+                    <div class="linia">
+                        <p>Nombre.</p>
+                        <input placeholder="Ingrese su nombre" class="caja" type="text">
+                    </div>
+                    <div class="linia">
+                        <p>Apellido.</p>
+                        <input placeholder="Ingrese su nombre" class="caja" type="text">
+                    </div>
+                    <div class="linia">
+                        <p>Email.</p>
+                        <input placeholder="Ingrese su nombre" class="caja" type="email">
+                    </div>
+                    <div class="linia">
+                        <p>Pais.</p>
+                        <input placeholder="Ingrese su nombre" class="caja" type="email">
+                    </div>
+                    <div class="linia">
+                        <p>Ciudad.</p>
+                        <input placeholder="Ingrese su nombre" class="caja" type="email">
+                    </div>
+                     <div class="info">
+                        <p> <i class="fa-solid fa-circle-info"></i>Esta informacion sera utilizada por EAS para emitir su factura.</p>
+                     </div>
+                  </div>
+            </div>
+            <div class="columna2p columnap">
+                <h2 class="titulo">Modo de pago</h2>
+                <div class="linias">
+                    <div class="linia-2 linia">
+                        <p>targeta de credito o debito.</p>
+                         <div class="caja-targeta ">
+                            <input name="gender" type="radio">
+                            <div class="cont-imgs">
+                                <img src="./Recursos/Imagenes/visa.png" alt="">
+                            <img src="./Recursos/Imagenes/american-express.png" alt="">
+                            <img src="./Recursos/Imagenes/discover.png" alt="">
+                            </div>
+                            
+                         </div>
+                    </div>
+                    <div class="linia-2 linia">
+                        <p>Paypal</p>
+                        <div class="caja-paypal">
+                            <input type="radio">
+                            <img src="./Recursos/Imagenes/paypal.png" alt="">
+                        </div>
+                    </div>
+                    <div class="linia2 liniasi-targeta linia">
+                        <p>Numero de targeta</p>
+                        <input placeholder="0000 - 0000 - 0000 - 0000" class="caja"  type="text">
+                        <i class="fa-solid fa-credit-card input-icono"></i>
+                    </div>
+                    <div class="linia2 liniasi-targeta liniasitargeta2">
+                        <div class="linia1 linia">
+                            <p>Fecha de caducidad</p>
+                            <input class="caja" placeholder="MM / YY" type="text">
+                        </div>
+                        <div class="linia2 linia">
+                            <p>Codigo de seguridad</p>
+                            <input placeholder="CCV" class="caja" type="text">
+                        </div>
+                    </div>
+                    <div class="resolucion">
+                        <p> <i class="fa-solid fa-hand"></i>  Si tienes inconvenientes con tu pago dirigete a <a href="#">Solucion de problemas</a></p>
+                    </div>
+                </div>
+            </div>
+            <div class="columna3p columnap">
+                <h2 class="titulo">Detalle de compra</h2>
+                <p>Representacion clara</p>
+                <div class="cont">
+                    <div class="linia1 linia-c3">
+                        <div class="part1">
+                            <label for="">Plan mensual</label>
+                            <input type="radio" name="" id="">
+                        </div>
+                        <div class="part2">
+                            <label for="">Plan anual</label>
+                            <input type="radio" name="" id="">
+                        </div>
+                    </div>
+                    <div class="linia2 linia-c3">
+                        <p>Plan mensual</p>
+                        <p>50,00$</p>
+                    </div>
+                    <div class="linia3 linia-c3">
+                        <p>IVA/Impuestos sobre las ventas</p>
+                        <p>0,00$</p>
+                    </div>
+                    <div class="linia4 linia-c3">
+                        <p>TOTAL</p>
+                        <p>50,00$</p>
+                    </div>
+                </div>
+                <input type="submit" value="Terminar y pagar">
+                <div class="renovacion">
+                    <h3>Renovacion sencilla.</h3>
+                    <p>su suscripcion sera renovada automaticamente cada mes por un pago de <span>50$</span> .</p>
+                    <p>Ademas usted podra cancelar su suscripcion en el momento en que lo desee desde el area de <a href="#">Mis planes</a> que se encuentra en el perfil.
+                    </p>
+                </div>
+            </div>
+           </form>
+        </div>
+    </main>
+    <footer>
+        <parte-footer>
+     
+        </parte-footer>
+    </footer>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="./Java-Scrips-frontend/Pago-premium.js"></script>
+</body>
+</html>

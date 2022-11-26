@@ -1,0 +1,25 @@
+:root
+{
+   /*!Colores*/
+
+--Negro: hsl(0, 0%, 10%);
+--Negro-2:hsl(225, 5%, 15%);
+--Azul-Primario: hsl(223, 75%, 39%);
+--Gris-Primario:hsl(240, 1%, 16%);
+--Amarillo-Primario:hsl(48, 98%, 53%);
+--Amarillo-fuerte:hsl(45, 100%, 50%);
+--Azul--Oscuro:hsl(249, 75%, 14%);
+--Para-letras:hsl(0, 0%, 20%);
+
+--Gris-Secundario:hsl(210, 7%, 28%);
+--Amarillo-Secundario:hsl(45, 75%, 55%);
+--Azul-Secundario:hsl(241, 54%, 36%);
+
+--Blanco:hsl(0, 0%, 100%);
+--Gris-Claro:hsl(240, 1%, 77%);
+
+/*!Tipografia*/
+--Epilogue: 'Epilogue', sans-serif;
+--Raleway: 'Raleway', sans-serif;
+--Roboto:'Roboto', sans-serif; 
+}

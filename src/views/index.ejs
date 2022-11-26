@@ -1,25 +1,569 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-	<title>Authentication with Node</title>
-	<% include partials/head %>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <%- include ('partials/home-head.ejs') %>
+
+    <title>EAS</title>
 </head>
 <body>
+    <script>
+        AOS.init();
+      </script>
+    <!-- Creacion de Header que funcionara como componente en toda la plataforma web...-->
+    <section class="header">
+        <header>
+            <section class="limite Nav-bar">
+                <div class="cont-icono">
+                    <img src="/Recursos/Imagenes/logo-removebg-preview.png" alt="">
+                    <h1>EAS</h1>
+                   </div>
+                   <div class="Menu">
+                    <div class="Menu-1">
+                        <nav>
+                            <ul>
+                                <li><a href="index">Home</a></li>
+                                <li><a href="./Servicio">Service</a></li>
+                                <li><a href="./contacto">Contact</a></li>
+                                <li><a href="Planes" class="a-E">Conviertete en premium</a></li>
+                            </ul>
+                        </nav>
+                        <div class="contenedor-botones-header">
+                            <a href="./Inicio-sesion" id="boton-h1" class="botones-header btn-1-header">Login</a> 
+                            <a href="./Registrar" class="botones-header btn-2-header" >¡Inicia gratis!</a>
+                         </div>
+                    </div>
+                  </div>
+                       <i class="hamburger fa-solid fa-bars"></i>
+             </section>
+        </header>
+        <!-- Definiendo clase que funcionara como atraccin visual de la pagina de inicio -->
+        <section class="limite Welcome">
+            <div data-aos="fade-right" class="cont-part-1">
+               <h1>Optimiza tu empresa <br> <span>Para llevar un preciso control de tu efectivo con nosotros.</span></h1>
+               <p>si la contabilidad no es tu fuerte y la consideras necesaria para tu empresa nuestra plataforma es tu mejor opcion para llevar un orden contable exitoso.</p>
+               <div class="cont-btn-part1">
+                <button class="btn1-W">Inicia gratuitamente</button>
+                <button class="btn2-W">Explora las soluciones</button>
+               </div>
+            </div>
+            <!-- parte N2 de la atraccion visual de bienvenida... -->
+            <div data-aos="fade-left" class="cont-part-2">
+                <!-- animacion del archivo svg, que se encuentra en la pagina de inicio -->
+               <div class="animacion">
+                <lottie-player src="./Recursos/58948-finance-blue.json" background="transparent" class="ilustracion"  speed="1"   loop autoplay></lottie-player>
+               </div>
+            </div>
+          </section>
+    </section>
+    <main>
+        <section class="Seccion-ejemplos">
+            <div class="limite Seccion-ejemplos-cont">
+                <h2>Que puedo hacer con esta plataforma</h2>
+                <div class="Contenedor-targetas-Seccion-ejemplos">
+                    <div class="targeta-seccion-ejemplo targeta-1">
+                        <div class="box">
+                            <div class="contenido">
+                                <div class="cont-icono-seccion-ejemplo">
+                                    <i class="fa-solid fa-list"></i>
+                                </div>
+                                <p>registro y manejo de las ventas diarias que se lleven a cabo.</p>
+                                <button class="btn-abrir">Ver</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="targeta-seccion-ejemplo targeta-2">
+                        <div class="box">
+                            <div class="contenido">
+                                <div class="cont-icono-seccion-ejemplo">
+                                    <i class="fa-solid fa-chart-simple"></i>
+                                </div>
+                                <p>Registros de costos y gastos en fechas determinadas.</p>
+                                <button class="btn-abrir-1">Ver</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="targeta-seccion-ejemplo targeta-3">
+                        <div class="box">
+                            <div class="contenido">
+                                <div class="cont-icono-seccion-ejemplo">
+                                    <i class="fa-solid fa-file"></i>
+                                </div>
+                                <p>registro y manejo de montos iniciales de la empresa .</p>
+                                <button class="btn-abrir-2">Ver</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="targeta-seccion-ejemplo targeta-4">
+                        <div class="box">
+                            <div class="contenido">
+                                <div class="cont-icono-seccion-ejemplo">
+                                    <i class="fa-solid fa-magnifying-glass-dollar"></i>
+                                </div>
+                                <p>creacion y administracion de el balance general.</p>
+                                <button class="btn-abrir-3">Ver</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <button>Adquirir Servicios</button>
+            </div>
+        </section>
+        <section class="mostrable">
+            <i class="cerrar fa-solid fa-x"></i>
+            <div class="cont-mostrar">
+                <div class="cont-mostrable">
+                    <div class="cont-ejemplo">
+                        <img class="slider-image" src="" alt="">                    
+                    </div>
+                    <div class="btns">
+                        <div class="cont-btn-E">
+                            <i class="btn-sig fa-solid fa-arrow-left"></i>
+                        </div>
+                        <div class="cont-btn-E">
+                            <i class="btn-regresar fa-solid fa-arrow-right"></i>
+                        </div>
+                    </div>
+                </div>
+                <div class="cont-informacion">
+                    <h3 class="slider-title" ></h3>
+                    <p class="slider-parrafo" ></p>
+                    <button>Ver planes</button>
+                </div>
+            </div>          
+        </section>
+        
+        <div class="seccion-prueba">
+            <div class="limite area1">
+                <div class="par1-area1">
+                    <h2>Tus datos e informacion <span class="letra-blue">100% seguros.</span></h2>
+                    <p>El mecanismo de seguridad que utiliza la plataforma EAs es sumamente eficaz ya que se usa un sistema de cifrado en casos de ataques siberneticos o algun otro intento malicioso, corrupti ducimus dolorem vel. Velit ea harum consequuntur labore assumenda officiis facere. Autem eius assumenda nisi.</p>
+                    <button>Explorar</button>
+                </div>
+                <div class="part2-area1">
+                    <img class="img1" src="./Recursos/Imagenes/area-nosotros-1.jpg" alt="">
+                    <img class="img2" src="./Recursos/Imagenes/area-nosotros-2.jpg" alt="">
+                </div>
+            </div>
+            <div class="limite area2">
+                <div class="part1-area2">
+                    <img src="./Recursos/Imagenes/area-nosotros-3.jpg" alt="">
+                </div>
+                <div class="part2-area2">
+                    <h2>Experiencia sumamente <span class="letra-blue"> amigable.</span></h2>
+                    <p>Utiliza EAS y agerga un eficiente ayudante para tu empresa que te permitira trabajar la contabilidad de forma sencilla.</p>
+                    <div class="mini-targetas">
+                        <div class="part-visible">
+                            <div class="part-visible-1">
+                                <i class="fa-solid fa-seedling"></i>
+                                <h4>Procedimientos faciles</h4>
+                            </div>
+                            <!--  <i class="flecha-arriba fa-solid fa-chevron-up"></i>-->
+                          
+                            <i class="FA  flecha-abajo    fa-solid fa-chevron-down"></i>
+                        </div>
+                        <div class="part-invisible">
+                            <p>EAS cuenta con una interfaz sumamente atractiva pero muy sencilla de usar con textos de ayuda integrados.!</p>
+                        </div>
+                    </div>
+                    <div class="mini-targetas M1">
+                        <div class="part-visible">
+                            <div class="part-visible-1">
+                                <i class="fa-solid fa-robot"></i>
+                                <h4>Soporte de ayuda</h4>
+                            </div>
+                              <!--  <i class="flecha-arriba fa-solid fa-chevron-up"></i>-->
+                            <i class="flecha-abajo FB fa-solid fa-chevron-down"></i>
+                        </div>
+                        <div class="part-invisible">
+                            <p>Ademas de la ayuda alojada en la documentacion EAS cuenta con consultores que te hayudaran en cualquier hora!</p>
+                        </div>
+                    </div>
+                    <div class="mini-targetas M2">
+                        <div class="part-visible">
+                            <div class="part-visible-1">
+                                <i class="fa-solid fa-trophy"></i>
+                                <h4>Resultados bien calculados</h4>
+                            </div>
+                             <!--  <i class="flecha-arriba fa-solid fa-chevron-up"></i>-->
+                            <i class="flecha-abajo FC fa-solid fa-chevron-down"></i>
+                        </div>
+                        <div class="part-invisible">
+                            <p>Las funcionalidades que aporta EAS estan supervisadas por extertos consultores del area de contabilidad y finanzas!</p>
+                        </div>
+                    </div>
+                </div>
+                
 
-	<div class="container">
-		<div class="card text-center mt-5">
-			<div class="card-body">
-				<h1><span class="fa fa-block"></span>Node Authentication</h1>
-				<p>Login or Register</p>
-				<a href="/login" class="btn btn-light">
-					<span class="fa fa-user"></span> Local Login
-				</a>
-				<a href="/signup" class="btn btn-light">
-					<span class="fa fa-user"></span> Local Signup
-				</a>
-			</div>
-		</div>
-	</div>
+            </div>
+            <div class="limite area3">
+                <h2>Administra y maneja la cantidad de tu efectivo de forma confidencial.</h2>
+                <img src="./Recursos/Imagenes/ilustracion-llave.png" alt="">
+                <p>Si tenemos un buen control de todas nuestras finanzas nos permitiremos poder tramitar muchísimo mejor todos nuestros recursos, claramente conociendo todos los riesgos a los que nos enfrentamos y así conocer con mucho más detalle todos nuestros ingresos y gastos.</p>
+            </div>
+            <div class="limite targetitas">
+                <div class="targeta-par targetita">
+                    <div class="cont-icono-targetita">
+                       <img src="./Recursos/Imagenes/1-porq-nosotros.png" alt="">
+                    </div>
+                    <h6>Resultados graficos.</h6>
+                    <p>Se generaran graficas automaticamente de las tablas creadas en periodos especificos</p>
+                </div>
+                <div class="targeta-impar targetita">
+                    <div class="cont-icono-targetita">
+                        <img src="./Recursos/Imagenes/2-porq-nosotros.png" alt="">
+                    </div>
+                    <h6>Inspecciona tu crecimiento.</h6>
+                    <p>Se guardaran todos los movimientos que sean ingresados pra revisiones cuando se deseen.</p>
+                </div>
+                <div class="targeta-par targetita">
+                    <div class="cont-icono-targetita">
+                        <img src="./Recursos/Imagenes/3-porq-nosotros.png" alt="">
+                    </div>
+                    <h6>Prebee futuras perdidas.</h6>
+                    <p>gracias a los libros que ofrecce EAs se pueden prebeer futuras perdidas para evitarlas.</p>
+                </div>
+                <div class="targeta-impar targetita">
+                    <div class="cont-icono-targetita">
+                        <img src="./Recursos/Imagenes/4-porq-nosotros.png" alt="">
+                    </div>
+                    <h6>Precio muy accesible.</h6>
+                    <p>comparado al monto que suelen cobrar los contadores o consultores el precio de EAS es bajo.</p>
+                </div>
+            </div>
+        </div>
+        <section class="Nosotros">
+            <div class="limite cont-nosotros">
+                <h2>¿Quienes somos?</h2>
+                <p>Somos una empresa 100% responsable y visionaria y tenemos como prioridad tu satisfaccion.</p>
+                <div class="cont-targetas-nosotros">
+                    <div class=" targeta-mision   targetas-nosotros">
+                        <img src="./Recursos/Imagenes/pexels-fauxels-3184306.jpg" alt="">
+                        <div class="part-2-cont-targetas-nosotros">
+                            <h3>Mision</h3>
+                            <h4><span>Facilitar</span>  a las empresas el proceso contable.</h4>
+                            <p>Facilitar a las empressas el proceso contable y a todo negocio por lo mas pequeño que sea poder brindar una atencion placentera. </p>
+                            <a href="#">Leer mas...</a>
+                        </div>
+                    </div>
+                    <div class=" targeta-vision  targetas-nosotros">
+                        <img src="./Recursos/Imagenes/pexels-andrea-piacquadio-3778966.jpg" alt="">
+                        <div class="part-2-cont-targetas-nosotros">
+                            <h3>Vision</h3>
+                            <h4>Que todas las  empresas usen EAS.</h4>
+                            <p>Facilitar a las empressas el proceso contable y a todo negocio por lo mas pequeño que sea poder brindar una atencion placentera. </p>
+                            <a href="#">Leer mas...</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+        <section class="clientes">
+            <h2>Nuestros clientes</h2>
+            <div class="cont-clientes">
+                <div class="slider-clientes">
+                    <div class="cart-clientes">
+                        <div class="cont-primera-clientes">
+                            <img src="./Recursos/Imagenes/pexels-andrea-piacquadio-712513.jpg" alt="">
+                        </div>
+                        <p class="nom">La nelson</p>
+                        <p class="tipo-negocio">
+                             Centro recreativo
+                        </p>
+                        <div class="cont-estrellas">
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-regular fa-star"></i>
+                            <i class="fa-regular fa-star"></i>
+                        </div>
+                    </div>
+                    <div class="cart-clientes">
+                        <div class="cont-primera-clientes">
+                            <img src="./Recursos/Imagenes/cliente-2.jpg" alt="">
+                        </div>
+                        <p class="nom">Florita</p>
+                        <p class="tipo-negocio">
+                             Centro recreativo
+                        </p>
+                        <div class="cont-estrellas">
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-regular fa-star"></i>
+                            <i class="fa-regular fa-star"></i>
+                        </div>
+                    </div>
+                    <div class="cart-clientes">
+                        <div class="cont-primera-clientes">
+                            <img src="./Recursos/Imagenes/cliente-3.jpg" alt="">
+                        </div>
+                        <p class="nom">El ranchon</p>
+                        <p class="tipo-negocio">
+                             Centro recreativo
+                        </p>
+                        <div class="cont-estrellas">
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-regular fa-star"></i>
+                        </div>
+                    </div>
+                    <div class="cart-clientes">
+                        <div class="cont-primera-clientes">
+                            <img src="./Recursos/Imagenes/cliente-4.jpg" alt="">
+                        </div>
+                        <p class="nom">Salt bae</p>
+                        <p class="tipo-negocio">
+                             Centro recreativo
+                        </p>
+                        <div class="cont-estrellas">
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-regular fa-star"></i>
+                        </div>
+                    </div>
+                    <div class="cart-clientes">
+                        <div class="cont-primera-clientes">
+                            <img src="./Recursos/Imagenes/cliente-5.jpg" alt="">
+                        </div>
+                        <p class="nom">Burger</p>
+                        <p class="tipo-negocio">
+                             Tienda de motos
+                        </p>
+                        <div class="cont-estrellas">
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-regular fa-star"></i>
+                        </div>
+                    </div>
+                    <div class="cart-clientes">
+                        <div class="cont-primera-clientes">
+                            <img src="./Recursos/Imagenes/cliente-6.jpg" alt="">
+                        </div>
+                        <p class="nom">Maytee</p>
+                        <p class="tipo-negocio">
+                             Marisqueria
+                        </p>
+                        <div class="cont-estrellas">
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-regular fa-star"></i>
+                        </div>
+                    </div>
+                    <div class="cart-clientes">
+                        <div class="cont-primera-clientes">
+                            <img src="./Recursos/Imagenes/cliente-7.jpg" alt="">
+                        </div>
+                        <p class="nom">Rapifacil</p>
+                        <p class="tipo-negocio">
+                             Colegio
+                        </p>
+                        <div class="cont-estrellas">
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-regular fa-star"></i>
+                        </div>
+                    </div>
+                    <div class="cart-clientes">
+                        <div class="cont-primera-clientes">
+                            <img src="./Recursos/Imagenes/pexels-andrea-piacquadio-712513.jpg" alt="">
+                        </div>
+                        <p class="nom">Cow-bem</p>
+                        <p class="tipo-negocio">
+                             Distribuidora
+                        </p>
+                        <div class="cont-estrellas">
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-regular fa-star"></i>
+                            <i class="fa-regular fa-star"></i>
+                        </div>
+                    </div>
+                    <div class="cart-clientes">
+                        <div class="cont-primera-clientes">
+                            <img src="./Recursos/Imagenes/cliente-2.jpg" alt="">
+                        </div>
+                        <p class="nom">Damba</p>
+                        <p class="tipo-negocio">
+                             Cooperativa
+                        </p>
+                        <div class="cont-estrellas">
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-regular fa-star"></i>
+                            <i class="fa-regular fa-star"></i>
+                        </div>
+                    </div>
+                    <div class="cart-clientes">
+                        <div class="cont-primera-clientes">
+                            <img src="./Recursos/Imagenes/cliente-3.jpg" alt="">
+                        </div>
+                        <p class="nom">La nelson</p>
+                        <p class="tipo-negocio">
+                             Restaurante
+                        </p>
+                        <div class="cont-estrellas">
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-regular fa-star"></i>
+                        </div>
+                    </div>
+                    <div class="cart-clientes">
+                        <div class="cont-primera-clientes">
+                            <img src="./Recursos/Imagenes/cliente-4.jpg" alt="">
+                        </div>
+                        <p class="nom">La nelson</p>
+                        <p class="tipo-negocio">
+                             Centro recreativo
+                        </p>
+                        <div class="cont-estrellas">
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-regular fa-star"></i>
+                        </div>
+                    </div>
+                    <div class="cart-clientes">
+                        <div class="cont-primera-clientes">
+                            <img src="./Recursos/Imagenes/cliente-5.jpg" alt="">
+                        </div>
+                        <p class="nom">La nelson</p>
+                        <p class="tipo-negocio">
+                             Centro recreativo
+                        </p>
+                        <div class="cont-estrellas">
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-regular fa-star"></i>
+                        </div>
+                    </div>
+                    <div class="cart-clientes">
+                        <div class="cont-primera-clientes">
+                            <img src="./Recursos/Imagenes/cliente-6.jpg" alt="">
+                        </div>
+                        <p class="nom">La nelson</p>
+                        <p class="tipo-negocio">
+                             Centro recreativo
+                        </p>
+                        <div class="cont-estrellas">
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-regular fa-star"></i>
+                        </div>
+                    </div>
+                    <div class="cart-clientes">
+                        <div class="cont-primera-clientes">
+                            <img src="./Recursos/Imagenes/cliente-7.jpg" alt="">
+                        </div>
+                        <p class="nom">La nelson</p>
+                        <p class="tipo-negocio">
+                             Centro recreativo
+                        </p>
+                        <div class="cont-estrellas">
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-regular fa-star"></i>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="Publicidad">
+            <div class="cont1-publicidad">
+                <div class="limite cont1-publicidad-e">
+                    <h2>Conviertete en unos de nuetros clientes </h2>
+                    <p>y unete a nuestra gran familia y obten los beneficios de bienvenida</p>
+                    <img src="./Recursos/Imagenes/pexels-pavel-danilyuk-5520327.jpg" alt="">
+
+            </div>
+            <div class="cont2-publicidad">
+                <div class="cont2-publicidad-e">
+                    <p>Obten mas informacion de nuestros precios. Lorem ipsum dolor sit amet consectetur adipisicing elit. Quibusdam, suscipit.</p>
+                    <button>Iniciar ya</button>
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <div class="linia"></div>
+       <section class="limite Footer">
+        <div class="columna columna-1-footer">
+            <img src="./Recursos/Imagenes/logo-removebg-preview.png" alt="">
+            <h2>EAS</h2>
+            <p>EAS ba mucho ma haya que una simple pagina de ayuda para la contabilidad si no que EAS sera tu asistente de fiebilidad casi comparado como un trabajador mas para tu empresa.</p>
+        </div>
+        <div class="columna columna-2-footer">
+            <h3>Compañia</h3>
+            <div class="linia"></div>
+            <a href="#">Que es EAS</a>
+            <a href="#">El equipo</a>
+            <a href="#">Los consultores</a>
+            <a href="#">Nuestra identidad</a>
+            <a href="#">Marca y logotipo</a>
+            <a href="#">El Progreso</a>
+        </div>
+        <div class="columna columna-2-footer">
+            <h3>Legal</h3>
+            <a href="#">Politica de privacidad</a>
+            <a href="#">Terminos y condiciones</a>
+            <a href="#">Politica de reembolsos</a>
+            <h3>Ayuda</h3>
+            <div class="linia"></div>
+            <a href="#">Servicio para empresas</a>
+            <a href="#">Consultoria</a></a>
+            <a href="#">Analisis</a>
+        </div>
+        <div class="columna columna-3-footer">
+            <h3>Siguenos</h3>
+            <div class="linia"></div>
+            <div class="cont-media"><i class="fa-brands fa-facebook-f"></i></div>
+            <div class="cont-media"><i class="fa-brands fa-twitter"></i></div>
+            <div class="cont-media"><i class="fa-brands fa-youtube"></i></div>
+            <div class="cont-media"><i class="fa-brands fa-instagram"></i></div>
+            <div class="cont-media"><i class="fa-brands fa-twitch"></i></div>
+        </div>
+       </section>
+        <div class="pie">
+            <p>	Ⓒ EAS Easier Acounting Service</p>
+        </div>
+    </footer>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="./Java-Scrips-frontend/main.js">   
+    </script>
+     <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
+    <script src="./Recursos/Datos/index.json"></script>
+    <!--
+        <script>
+        var image1=images[0].url;
+        console.log(image1);
+        //$('.slider-image').attr('src')
+    </script>
+    -->
+ 
 
 </body>
 </html>

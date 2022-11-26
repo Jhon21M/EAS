@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <%- include ('partials/registrar-head.ejs') %>
+
+   
+    <title>EAS</title>
+</head>
+<body>
+    <script>
+        AOS.init();
+    </script>
+   <div class="contenedor">
+ 
+  <div class="part1-r">
+    <div class="cont-part1-r">
+        <div class="logo-1 logo-r">
+            <img id="Logo-tipo" src="./Recursos/Imagenes/LOGO-inverso.png" alt="">
+            <h1>EAS</h1>
+        </div>
+        <div class="cont-info">
+            <h3>Descubra los beneficios que contiene EAS.</h3>
+                        <p>Ademas de poseer una interfaz amigable sera un confiable ayudante en su empresa.</p>
+        </div>
+        <div class="cont-info-condi">
+            <div class="cont-condi-1">
+                <i class="fa-solid fa-clipboard"></i>
+                <h4>Politicas de privacidad</h4>
+            </div>
+            <div class="cont-condi-1">
+                <i class="fa-solid fa-users"></i>
+                <h4>Condiciones de uso</h4>
+            </div>
+        </div>
+    </div>
+  </div>
+  <div class="part2-r">
+   
+    <div  class="con-formulario">
+        <div class="logo">
+            <h3>Cree su cuenta</h3>
+        </div>
+        <h3 class="enuciado-1">Informacion personal.</h3>
+        <form class="formu-1" action="">
+            <div class="linia primera-linia">
+                <div class="part part-1">
+                    <p>Nombre.</p>
+                    <input placeholder="Ingrese su nombre" class="caja" type="text">
+                </div>
+                <div class="part part-2">
+                    <p>Apellido.</p>
+                    <input placeholder="Ingrese su apellido" class="caja" type="text">
+                </div>
+            </div>
+            <div class="linia part segunda-linia">
+                <p>Nombre de la entidad.</p>
+                <input placeholder="Ingrese el nombre de su empresa" class="caja" type="text">
+            </div>
+             <div class="linia tercera-linia">
+                <div class="part part-1">
+                    <p>Sexo.</p>
+                    <input type="radio"><label for="">Masculino</label> 
+                    <input type="radio"><label for="">Femenino</label>
+                </div>
+                <div class="part part-2">
+                    <p>Numero de telefono.</p>
+                    <input class="caja" placeholder="xxx - xxx - xxx" type="text">
+                </div>
+             </div>
+             <input class="btn-1 btn" type="button" value="Guardar informacion">
+        </form>
+        <form data-aos="fade-down-right" class="formu-2 formu-2-2" action="">
+            <div class="linia cuarta-linia">
+                <div class="part part-1">
+                    <p>Pais.</p>
+                    <input placeholder="Ingrese su pais de recidencia" class="caja" type="text">
+                </div>
+                <div class="part part-2">
+                    <p>Ciudad.</p>
+                    <input placeholder="Ingrese la ciudad" class="caja" type="text">
+                </div>
+             </div>
+             <div class="linia part quinta-linia">
+                <p>Calle.</p>
+                <input placeholder="Ingrese la calle" class="caja" type="text">
+             </div>
+             <div class="linia part sexta-linia">
+                <p>Direccion.</p>
+                <input placeholder="Ingrese su direccion" class="caja" type="text">
+             </div>
+
+             <input class="btn-2 btn" type="button" value="Guardar informacion">
+        </form>
+        <form class="formu-3 formu-3-3" action="">
+            <div class="cc1 cont-caja">
+                <p>Correo electronico.</p>
+                <input placeholder="Ingrese direccion de correo electronico" required class="caja" type="email">
+            </div>
+            <div class="cont-caja">
+                <p>Contraseña.</p>
+                <input placeholder="Ingrese su contraseña" class="caja" type="password" required>
+            </div>
+            <div class="cont-caja">
+                <p>Confirma tu contraseña.</p>
+                <input placeholder="Confirme su contraseña." class="caja" type="password" required>
+            </div>
+            <input class="btn btn2 btn-3" type="button" value="Crear cuenta">
+        </form>
+        <div class="enlace-in">
+            <p class="acceso-icio">¿Ya tienes cuenta?<a href="./Inicio-sesion">Inicia sesion</a></p>
+        </div>
+        <div class="slider-idicadores">
+            <i class="Ci1 Ci-p fa-solid fa-circle"></i>
+            <i class="Ci-S fa-solid fa-circle"></i>
+            <i class=" Ci-t fa-solid fa-circle"></i>
+        </div>
+    </div>
+    
+   </div>
+  </div>
+ 
+   <script src="./Java-Scrips-frontend/Registrar.js"></script>
+</body>
+</html>

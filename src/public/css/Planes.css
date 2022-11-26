@@ -1,0 +1,697 @@
+@import url('https://fonts.googleapis.com/css2? family=Epilogue:wght@100;200;300;400;500;600;700;800;900&family=Raleway:wght@100;200;300;400;500;600;700;800;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap');
+@import url('variables.css');
+*
+{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body
+{
+    background: #ebf5;
+    overflow-x: hidden;
+}
+.banner
+{
+    width: 100%;
+    display: flex;
+    height: 35vh;
+    background-image: url(../Recursos/Imagenes/Fondo-planes.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    justify-content: center;
+}
+.part-1
+{
+    
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-right: 15px;
+}
+.part-1 h1
+{
+    font-family: var(--Epilogue);
+    font-weight: 800;
+}
+.part-1 h2
+{
+    font-family: var(--Roboto);
+    font-size: 1.8em;
+    width: 650px;
+    text-align: center;
+}
+.imagen
+{
+    margin-left: 15px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.cont-img
+{
+    width: 250px;
+    height: 180px;
+    border-radius: 15px;
+    background: var(--Azul-Primario);
+}
+.imagen img
+{
+   width: 100%;
+   height: 100%;
+}
+.contenedor
+{
+    width: 100%;
+    position: relative;
+}
+.contenedor-targetas
+{
+    
+    width: 90%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-evenly;
+    margin-bottom: 80px;
+}
+.caja
+{
+    margin-top: 80px;
+    position: relative;
+    width: 340px;
+    height: 510px;
+    border-radius: 15px;
+    box-shadow: inset 5px 5px 5px rgba(0,0,0,0.05),inset -5px -5px 5px rgba(255,255,255,0.5),5px 5px 5px rgba(0,0,0,0.05),-5px -5px 5px rgba(255, 255,255,0.5);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.targeta
+{
+    box-shadow: 0 10px 20px rgba(0,0,0,0.2);
+    transition: 0.4s, box-shadow 0.4s;
+    position: relative;
+    width: 300px;
+    height: 470px;  
+    border-radius: 15px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    background: #ebf5fc;
+    margin: auto;
+}
+.caja:hover .targeta
+{
+    transform: translateY(-50px);
+    box-shadow: 0 20px 40px rgba(0,0,0,0.3);
+}
+.targeta-part1
+{
+    width: 100%;
+    height: 80px;
+    background: var(--Azul-Primario);
+    border-radius: 15px 15px 0 0;
+}
+.targeta-part1>img{
+    width: 50px;
+    height: 50px;
+    position: relative;
+    float: right;
+    margin: 5px;
+}
+.cont-img-medio
+{
+    background-color: var(--Blanco);
+    position: relative;
+    width: 90px;
+    height: 90px;
+    border: 2px solid #000;
+    border-radius: 50%;
+    margin: 0 auto;
+    transform: translateY(30px);
+    text-align: center;
+}
+.cont-img-medio img
+{
+    position: relative;
+    width: 80%;
+    height: 80%;
+    margin: auto 0;
+    margin-top: 6px;
+}
+.targeta-part2
+{
+    width: 80%;
+    margin: 10px auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    
+}
+.targeta-1 .targeta-part2 h3{
+    position: relative;
+    top: 20px;
+    margin-top: -30px;
+}
+.targeta-part2 h3{
+    margin-bottom: 20px;
+    font-family: var(--Roboto);
+    color: #154f56;
+    margin-top: 20px;
+}
+.targeta-part2 h4 
+{
+    color: #154f56;
+    font-size: 2.5em;
+    font-weight: 700;
+    font-family: var(--Roboto);
+    margin-bottom: 20px;
+    margin-top: -10px;
+}
+.targeta-part2 sup
+{
+    color: #154f56;
+    font-size: 0.65em;
+    font-weight: 300;
+}
+.linia
+{
+    display: flex;
+    margin-bottom: 10px;
+    align-items: center;
+}
+.linia i
+{
+    color: #6FD653;
+    font-size: 1.4em;
+    margin-right: 8px;
+}
+.targeta1 .linia i
+{
+    color: #FAB24A;
+}
+.linia p
+{
+    font-family: var(--Roboto);
+    font-size: 14px;
+    font-weight: 500;
+    text-align: center;
+}
+.btn
+{
+    color: rgb(233, 237, 241);
+    position: relative;
+    padding: 10px 50px;
+    border-radius: 50px;
+    border: none;
+    cursor: pointer;
+    margin: 0 auto;
+    background: #4BAD4F;
+    font-weight: bold;
+    box-shadow: 0 0 4px rgba(0,0,0, 0.3);
+    margin-bottom: 25px;
+    text-decoration: none;
+    font-family: var(--Roboto);
+}
+.btn:hover
+{
+    box-shadow: none;
+}
+.targeta1 .btn{
+    position: relative;
+    background: var(--Amarillo-Primario);
+    transform: translateY(-10px);
+    margin-bottom: 20px;
+    font-size: 13px;
+    bottom: 35px;
+}
+.targeta-p3
+{
+    width: 100%;
+    text-align: center;
+}
+.targeta-part3
+{
+    margin-top: -2px;
+    position: relative;
+    width: 100%;
+    height: 20px;
+    border-radius: 0 0 15px 15px;
+    background: var(--Azul-Primario);
+}
+
+
+/*Cabecera*/
+.limite
+{
+    max-width: 1350px;
+}
+.header
+{
+    position: relative;
+    width: 100%;
+    height: 75vh;
+    background-image:url(../Recursos/Imagenes/fondo-pantalla-premium.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    overflow: hidden;
+    display: flex;
+   
+    justify-content: center;
+    box-shadow: 0 2px 3px 1px rgba(0,0,0, 0.4);
+    
+}
+/*!Perfil funcionalidad aun no activa...*/
+.cont-perfil
+{
+    height: 100%;
+    display: flex;
+}
+.perfil
+{
+    width: 50px;
+    height: 50px;
+    border: 2px solid var(--Negro);
+    background: var(--Amarillo-Primario);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.perfil h4
+{
+    font-family: var(--Roboto);
+    font-weight: 700;
+    color: var(--Negro);
+}
+
+header.sticky .perfil
+{
+    border: 2px solid var(--Blanco);
+    width:45px;
+    height: 45px;;
+    
+}
+header.sticky .perfil h4
+{
+    color: var(--Blanco);
+}
+header.sticky ul a{
+    color: aliceblue;
+}
+header.sticky .cont-icono h1
+{
+    color: var(--Blanco);
+}
+header.sticky .btn-1-header
+{
+    color: var(--Gris-Claro);
+    border: 2px solid var(--Gris-Claro);
+}
+header.sticky .a-E
+{
+    color: var(--Amarillo-Primario);
+}
+header.sticky .cont-perfil i
+{
+    color: var(--Blanco);
+}
+.icm
+{
+    position: relative;
+    transform: translateX(200px);
+}
+.cont-perfil
+{
+    align-items: center;
+}
+.cont-perfil i{
+    color: var(--Gris-Primario);
+    cursor: pointer;
+    margin-left: 5px;
+}
+
+.Welcome
+{
+    height: 85vh;
+    width: 85%;
+    margin:0 auto;
+    position: relative;
+    left: 0;
+    top: 110px;
+    display:flex;
+    align-items: center;
+    justify-content: center;
+}
+.part-1 h2
+{
+    color: var(--Blanco);
+    line-height: 38px;
+}
+.part-1 h1
+{
+    color: var(--Blanco);
+    font-size: 2.5em;
+    font-weight: 700;
+    margin-top: 5px;
+}
+.ventana-perfil
+{
+    position: fixed;
+    top: 85px;
+    right: 5%;
+    width: 250px;
+    background: #ebf5fc;
+    border-radius: 10px;
+    transition: all 0.4s;
+    height: 0;
+    overflow: hidden;
+    z-index: 5;
+    box-shadow: 0 0 2px rgba(0,0,0, 0.5);
+}
+#btn-desplegar:hover
+{
+    color: var(--Gris-Claro);
+}
+.ventana-perfil-a
+{
+    height: 411px;
+}
+.linia-p
+{
+    display: flex;
+    width: 90%;
+    justify-content: space-between;
+    margin: 0 auto;
+    padding: 20px 0;
+    border-bottom: 1px solid #ccc;
+}
+.linia-p3 h4:hover
+{
+    color: var(--Azul-Primario);
+    cursor: pointer;
+}
+.linia-5p h4:hover
+{
+    color: var(--Azul-Primario);
+    cursor: pointer;
+}
+.linia-6p h4:hover
+{
+    color: var(--Azul-Primario);
+    cursor: pointer;
+}
+.linia-p .PL:hover .linia-p i
+{
+    color: var(--Azul-Primario);
+}
+.linia-1p i
+{
+    color: var(--Gris-Claro);
+    cursor: pointer;
+}
+.linia-1p i:hover
+{
+    color: #000;
+}
+.grupo3,.grupo2
+{
+    
+    width: 90%;
+    margin: 0 auto;
+    padding: 20px 0;
+    border-bottom: 1px solid #ccc;
+}
+.grupo2
+{
+    display: flex;
+    align-items: center;
+}
+.grupo2 .texto
+{
+    margin-left: 10px;
+}
+.grupo2 .texto p
+{
+    font-size: 10px;
+    font-weight: 400;
+}
+.PL
+{
+    font-family: var(--Raleway);
+    font-weight: 600;
+    font-size: 15px;
+}
+.linia-p3
+{
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+   
+    padding: 7px 0;
+    
+}
+.targeta-felicitacion-plan-gratuito
+{
+    position: absolute;
+    width: 100%;
+    height: 100vh;
+    background: rgba(0,0,0, 0.5);
+    z-index: 10;
+    display: flex;
+    align-items: center;
+    transform: translateX(120%);
+    transition: all .4s;
+}
+.aparecer-cont-targeta-felicitacion
+{
+    transform: translateX(0);
+}
+.cont-targeta-felicitacion-plan-gratuito
+{
+    width: 60%;
+    height: 70vh;
+    margin: auto;
+    background: var(--Azul-Primario);
+    border-radius: 10px;
+    box-shadow: 0 0 5px rgba(0,0,0, 0.8);
+    z-index: 10;
+    text-align: center;
+    transform: scale(0);
+    transition: all .4s;
+}
+.aprecer-targeta
+{
+   transform: scale(1);
+}
+.cont-targeta-felicitacion-plan-gratuito img
+{
+    position: relative;
+    width: 85%;
+    height: 80%;
+    transform: translateY(-130px);
+    margin: 0 auto;
+}
+.cont-targeta-felicitacion-plan-gratuito h2
+{
+    width: 80%;
+    font-family: var(--Roboto);
+    color: #ebf5fc;
+    font-weight: 700;
+    font-size: 2.1em;
+    text-align: center;
+    margin-bottom: 20px;
+    margin: 0 auto;
+    margin-top:-140px;
+}
+.cont-targeta-felicitacion-plan-gratuito button
+{
+    margin-top: 30px;
+    padding: 10px 45px;
+    border: none;
+    color: #fff;
+    background: var(--Amarillo-fuerte);
+    border-radius: 25px;
+    box-shadow: 0px 2px 3px rgba(0,0,0, 0.4);
+    cursor: pointer;
+}
+
+
+/*Banner remastrizado*/
+.banner
+{
+    position: relative;
+    width: 100%;
+    height: 80vh;
+    background-image: url(../Recursos/Imagenes/fondo-pantalla-premium.jpg);
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+    box-shadow: 0 2px 3px 1px rgba(0,0,0, 0.4);
+}
+.cont-text
+{
+   height:417px;
+   width: 50%;
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+   justify-content: center;
+   transform: translateX(150px);
+}
+.banner img
+{
+    height: 437px;
+    transform: translateX(-40px);
+}
+.banner h2
+{
+    font-family: var(--Roboto);
+    color: var(--Blanco);
+    font-size: 2em;
+    text-align: center;
+    width: 85%;
+}
+.banner p
+{  
+    margin-top: 20px;
+    font-family: var(--Raleway);
+    font-weight: 600;
+    color: rgb(194, 193, 193);
+    width: 80%;
+    text-align: center;
+    line-height: 25px;
+}
+
+
+/* Mas detalles acerca de los planes*/
+.mas-detalles
+{
+    width:65%;
+    margin: 30px auto;
+    border-radius: 15px;
+    box-shadow: inset 5px 5px 5px rgba(0,0,0,0.05),inset -5px -5px 5px rgba(255,255,255,0.5),5px 5px 5px rgba(0,0,0,0.05),-5px -5px 5px rgba(255, 255,255,0.5);
+    padding: 20px;
+    margin-bottom: 80px;
+}
+.part-pegada
+{
+    display: flex;
+    width: 150px;
+    justify-content: space-around;
+}
+.fa-check
+{
+    font-size: 20px;
+    color: var(--Azul-Primario);
+}
+.fa-x
+{
+   font-size: 19px;
+   color: rgb(119, 116, 116);
+}
+
+.linia-masD
+{
+    font-family: var(--Roboto);
+    font-size: 14px;
+    font-weight: 500;
+}
+.linia-masD-titulo
+{
+    font-size: 17px;
+    color: var(--Azul-Primario);
+}
+.linia-masD
+{
+   width: 100%;
+   display: flex;
+   justify-content: space-between;
+   padding: 15px 0;
+   border-bottom: 1px solid rgb(184, 181, 181);
+   
+}
+
+/* parte de publicidad */
+.publicidad
+{
+    padding-top: 80px;
+    width: 65%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+}
+.cont-publicidad
+{
+   text-align: center;
+}
+.cont-publicidad img
+{
+    width: 130px;
+    height: 130px;
+}
+.cont-publicidad h3
+{
+   font-family: var(--Roboto);
+   color: var(--Azul-Primario);
+   margin: 5px 0;
+}
+.cont-publicidad p
+{
+    font-family: var(--Raleway);
+    font-size: 14px;
+    font-weight: 500;
+    color: rgb(102, 101, 101);
+    line-height: 22px;
+    width: 200px;
+}
+
+
+.contenedor-enlaces ul li::after 
+{
+    background-color: #fff;
+}
+footer
+{
+    width: 100%;
+    background: var(--Negro);
+}
+
+/*!............................................*/
+#Letras-L
+{
+  color: #ffe;
+}
+#Enlace a
+{
+  color: #ccc;
+}
+#Enlace:nth-child(4) a
+{
+  
+}
+.barra-navegacion.sticky #Enlace:nth-child(4) a
+{
+  color: var(--Amarillo-Primario);
+}
+#boton-h1
+{
+  border: 2px solid #ccc;
+  color: #ccc;
+}
+#boton-h1:hover
+{
+   color: #fff;
+   border:2px solid #fff;
+}
+#EP a
+{
+  color:hsl(241, 54%, 36%);
+}

@@ -1,0 +1,27 @@
+[
+    {
+        
+        "Titulo":"Ventas",
+        "Texto":"en el area de ventas podras registrar editar y eliminar registros de tus ventas asi mismo como solicitar informacion referente a ventas anteriores." ,
+        "url1":"Recursos/Imagenes-de-ejemplo/Ejemplo1-1.png",
+        "url2":"Recursos/Imagenes-de-ejemplo/Ejemplo1-2.png"
+    },
+    {
+        "Titulo":"Gastos y Costos",
+        "Texto":"en el area de costos y gastos podras registrar editar y eliminar registros en cuanto a los costos y gastos asi mismo como solicitar informacion referente a movimientos anteriores." ,
+        "url1":"Recursos/Imagenes-de-ejemplo/Ejemplo2-1.png",
+        "url2":"Recursos/Imagenes-de-ejemplo/Ejemplo2-1.png"
+    },
+    {
+        "Titulo":"Balance Inicial",
+        "Texto":"El area de balance inicial es sumamente importante por que es de donde inicia tu orden contable este te permitira registrar los montos con los que iniciaste operaciones.",
+        "url1":"Recursos/Imagenes-de-ejemplo/Ejemplo-3-1.png",
+        "url2":"Recursos/Imagenes-de-ejemplo/Ejemplo-3-2png"
+    },
+    {
+        "Titulo":"Estado de situacion financiera",
+        "Texto":"en el area de situacion finanaciera podras visualizar a detalle como ban andando tus finanzas asi mismo como las operaciones que se han realizado para llegar a ese resultado.",
+        "url1":"Recursos/Imagenes-de-ejemplo/Ejemplo4-1.png",
+        "url2":"Recursos/Imagenes-de-ejemplo/Ejemplo4-2.png"
+    }
+]

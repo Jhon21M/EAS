@@ -1,17 +1,39 @@
 module.exports = (app, passport) => {
 
-	// index routes
-	app.get('/', (req, res) => {
-		res.render('index');
-	});
-
 	//login view
-	app.get('/login', (req, res) => {
-		res.render('login.ejs', {
+	app.get('/Inicio-sesion', (req, res) => {
+		res.render('Inicio-sesion', {
 			message: req.flash('loginMessage')
 		});
 	});
-
+	app.get('/Registrar', (req, res) => {
+		res.render('Registrar', {
+			message: req.flash('loginMessage')
+		});
+	});
+	
+	app.get('/', (req, res) => {
+		res.render('index', {
+			message: req.flash('loginMessage')
+		});
+	});
+     app.get('/Servicio', (req, res) => {
+		res.render('Servicio', {
+			message: req.flash('loginMessage')
+		});
+	});
+	app.get('/contacto', (req, res) => {
+		res.render('contacto', {
+			message: req.flash('loginMessage')
+		});
+	});
+	app.get('/Planes', (req, res) => {
+		res.render('Planes', {
+			message: req.flash('loginMessage')
+		});
+	}); 
+	
+	
 	app.post('/login', passport.authenticate('local-login', {
 		successRedirect: '/profile',
 		failureRedirect: '/login',

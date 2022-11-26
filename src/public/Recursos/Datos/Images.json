@@ -1,0 +1,13 @@
+var images=
+[
+    {
+        'url':'Recursos/Imagenes-de-ejemplo/Ejemplo1-1.png'
+        'url2':'Recursos/Imagenes-de-ejemplo/Ejemplo1-2.png'
+        'desc':'Imagenes de ejemplo 1'
+    },
+    {
+        'url':'Recursos/Imagenes-de-ejemplo/Ejemplo2-1.png'
+        'url2':'Recursos/Imagenes-de-ejemplo/Ejemplo2-2.png'
+        'desc':'Imagenes de ejemplo 1'
+    }
+]

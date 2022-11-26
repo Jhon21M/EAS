@@ -13,13 +13,13 @@ const session = require('express-session');
 const { url } = require('./config/database.js');
 
 mongoose.connect(url, {
-	useMongoClient: true
+	//useMongoClient: true
 });
 
 require('./config/passport')(passport);
 
 // settings
-app.set('port', process.env.PORT || 3000);
+app.set('port', process.env.PORT || 5000);
 app.set('views', path.join(__dirname, 'views'));
 app.set('view engine', 'ejs');
 

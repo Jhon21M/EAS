@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- <link rel="stylesheet" href="./Estilos-css/Registrar.css"> -->
+	<%- include ('partials/head.ejs') %>
+
+    <title>EAS/Inicio-Sesion</title>
+</head>
+<body>
+    <main>
+        <div class="contenedor-1">
+            <div class="contenedor-1-1">
+                <div class="img-f">
+                    <h2>Empieza a utilizar tu ayudante contable virtual. </h2>
+                </div>
+            </div>
+            <div class="contenedor-1-2">
+                <div class="logo-1">
+                    <img src="../public/Recursos/Imagenes/logo-removebg-preview.png" alt="">
+                    <h1>EAS</h1>
+                </div>
+                <h3>Inicia sesion.</h3>
+                <form action="">
+                    <div class="cont-caja">
+                        <p>Correo electronico</p>
+                        <input placeholder="Ingrese  correo electronico" required class="caja" type="email">
+                    </div>
+                    <div class="cont-caja">
+                        <p>Contraseña.</p>
+                        <input placeholder="Ingrese su contraseña" class="caja" type="password" required>
+                    </div>
+                    <input class="btn btn2" type="submit" value="Iniciar sesion"> 
+                </form>
+                <div class="con-parb">
+                    <p class="enl en1">¿No tienes una cuenta? <a href="./Registrar">Registrate gratis.</a></p>
+                    <p  class="enl"><a href="#" class="  recuperarcontra">¿Olvidaste tu contraseña?</a></p>
+                </div>
+            </div>
+        </div>
+    </main>
+</body>
+</html>

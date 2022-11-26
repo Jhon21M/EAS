@@ -1,0 +1,510 @@
+@import url('https://fonts.googleapis.com/css2? family=Epilogue:wght@100;200;300;400;500;600;700;800;900&family=Raleway:wght@100;200;300;400;500;600;700;800;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap');
+@import url('../variables.css');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+
+*
+{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.parte-central-ventas
+{
+    width: 100%;
+    transition: all 0.4s;
+    overflow: hidden;
+    display: none;
+}
+.parte-central-ventas-activa
+{
+    display: block;
+}
+.parte-central-ventas-superior
+{
+    height: 250px;
+    background: #ccc;
+    width: 100%;
+   margin: 35px 0; 
+   border-radius: 10px;
+   box-shadow: 0 0 3px rgba(0,0,0, 0.3);
+  
+}
+.parte-central-ventas-superior h3
+{
+    text-align: center;
+    font-family: var(--Epilogue);
+    padding-top: 20px;
+    font-size: 2em;
+    color: var(--Negro);
+}
+.parte-central-ventas-superior-content
+{
+
+    width: 60%;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: -20px;
+}
+.parte-central-ventas-superior-part1 p
+{
+    font-size: 14px;
+    font-family: var(--Raleway);
+    font-weight: 600;
+    line-height: 22px;
+}
+.parte-central-ventas-superior-part1 a
+{
+    padding-top: 10px;
+    font-family: var(--Raleway);
+    text-decoration: none;
+    color: var(--Azul-Primario);
+    font-size: 14px;
+    font-weight: 800;
+    padding-bottom: 6px;
+    border-bottom: 3px solid var(--Amarillo-Primario);
+}
+.parte-central-ventas-superior img
+{
+    width: 250px;
+    height: 250px;
+}
+
+/*! Estilos de el formulario*/
+.parte-central-ventas-formulario
+{
+    width: 100%;
+}
+.encabezado
+{
+    width: 95%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.encabezado h3
+{
+    font-family: var(--Epilogue);
+    font-size: 1.4em;
+    font-weight: 600;
+}
+.ayuda
+{
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+}
+.ayuda i
+{
+    color: var(--Azul-Primario);
+    margin-right: 5px;
+    font-size: 18px;
+}
+.ayuda a
+{
+    text-decoration: none;
+    font-size: 14px;
+    font-weight: 600;
+    color: var(--Gris-Primario);
+}
+.cont-formulario
+{
+    width: 100%;
+    margin: 10px auto;
+    border-radius: 8px;
+    box-shadow: 0 0 3px rgba(0,0,0, 0.3);
+    padding: 20px 40px;
+    border: 1px solid rgba(0,0,0, 0.3);
+}
+.part p
+{
+    font-family: var(--Roboto);
+    font-weight: 600;
+    margin-bottom: 10px;
+    font-size: 12.5px;
+    color: var(--Gris-Primario);
+}
+.part-2
+{
+    display: flex;
+    
+    align-items: center;
+}
+.caja
+{
+   
+   height: 40px;
+   border: 1px solid var(--Gris-Claro);
+   border-radius: 5px;
+   box-sizing: border-box;
+   transition: all .3s;
+   outline: none;
+   padding: 0 10px;
+}
+.caja:focus
+{
+    border-color: var(--Azul-Primario);
+    box-shadow: 0 0 5px rgba(21, 60, 167, 0.7);
+}
+.caja::-webkit-input-placeholder
+{
+    font-size: 14px;
+    padding-left: 2px;
+}
+
+.part-1 .caja
+{
+    width: 100%;
+    margin-bottom: 20px;
+}
+.part-2 .caja
+{
+    width: 300px;
+    margin-right: 30px;
+}
+.cont-btns
+{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 40px;
+}
+.cont-btns input
+{
+    padding: 10px 50px;
+    border: none;
+    border-radius: 5px;
+    margin:  0 20px;
+    background: var(--Azul-Primario);
+    cursor: pointer;
+    color: rgb(235, 231, 231);
+    font-weight: bold;
+    font-family: var(--Roboto);
+    box-shadow: 0px 2px 3px rgba(0,0,0, 0.3);
+}
+.cont-btns .btn1
+{
+    background-color: rgb(177, 174, 174);
+    color: var(--Gris-Primario);
+}
+
+
+/*!Estilos de la tabla de informacion de la tabla ventas*/
+.parte-central-ventas-tablas
+{
+    margin-top: 30px;
+}
+
+.cont-tabla
+{
+    position: relative;
+    width: 100%;
+    border: 1px solid #000;
+    border-radius: 8px;
+    height: 80vh;
+    margin: 20px 0;
+    padding: 20px;
+    
+}
+.part-superior-tabla
+{
+    width: 95%;
+    margin: 0 auto;
+   display: flex;
+   justify-content: space-between;
+   align-items: center;
+}
+.part-superior-tabla h4
+{
+    font-size: 16px;
+}
+.cont-part-superior-tabla .btn1 input
+{
+    padding: 8px 35px;
+    border-radius: 5px;
+    border: none;
+    box-shadow: 0px 0px 4px rgba(0,0,0, 0.4);
+    margin-right: 15px;
+}
+.cont-part-superior-tabla .btn1 i
+{
+    margin-top: 3px;
+    color: var(--Gris-Claro);
+    transform: translateX(30px);
+}
+.btn2 input
+{
+    padding: 8px 45px;
+    border: none;
+    border-radius: 6px;
+    color: rgb(236, 232, 232);
+    box-shadow: 0 0 3px rgba(0,0,0, 0.3);
+    background: var(--Azul-Primario);
+}
+.btn2 i
+{
+    color: #fff;
+    transform: translateX(38px);
+}
+.cont-part-superior-tabla
+{
+    display: flex;
+}
+
+
+/*?.....................................*/
+.funcionalidad-tabla
+{
+    width: 98%;
+    margin: 20px auto;
+}
+.encabezado-tabla
+{
+    height: 60px;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border: 1px solid var(--Azul-Primario);
+    border-radius: 8px;
+    box-shadow: 0 3px 2px rgba(0,0,0, 0.3);
+}
+.encabezado-tabla .part1
+{
+    width: 97%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+}
+.enc2
+{
+    transform: translatex(-60px);
+}
+.enc3{
+    transform: translatex(-40px);
+}
+.enc4{
+    transform: translatex(-40px);
+}
+
+/*?estilos de cada registro de ventas*/
+.registro-venta
+{
+    width: 97%;
+    margin: 5px auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 0;
+    border-bottom: 1px solid rgba(0,0,0, 0.4);
+    font-size: 14px;
+    color: rgb(34, 34, 34);
+    font-weight: 500;
+}
+.cont-total
+{
+    display: flex;
+    align-items: center;
+    
+}
+.cont-total img
+{
+    margin-right: 10px;
+    width: 30px;
+    height: 30px;
+}
+.cont-total i
+{
+    margin-left: 30px;
+    font-size: 20px;
+    cursor: pointer;
+}
+.registro-venta p:nth-child(2)
+{
+   
+}
+.registro-venta p:nth-child(1)
+{
+    width: 5%;
+}
+.registro-venta p:nth-child(2)
+{
+    width: 45%;
+}
+.registro-venta p:nth-child(3)
+{
+    width: 10%;
+}
+.registro-venta p:nth-child(4)
+{
+    width: 70%;
+}
+
+
+/*Estilos para la tabla con tabla*/
+.funcionalidad-tabla
+{
+width: 100%;
+}
+
+table
+{
+    border-spacing: 0;
+    margin-top: 1rem;
+    width: 97%;
+    margin: 0 auto;
+}
+ thead
+{
+    border: 1px solid var(--Azul-Primario);
+    height: 60px;
+    width: 100%;
+    margin-top: 20px;
+    align-items: center;
+   
+    border-radius: 8px;
+    box-shadow: 0 0px 4px rgba(0,0,0, 0.5);
+}
+thead tr
+{
+    width: 100%;
+}
+thead th
+{
+    padding: 10px 5px;
+}
+tbody td
+{
+    font-size: 14px;
+    font-weight: 500;
+   padding: 10px;
+   text-align: center;
+   border-bottom: 1px solid #cac9c9;
+}
+.price
+{
+    display: flex;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+}
+.price img
+{
+    justify-content: center;
+    width: 35px;
+    height: 35px;
+    margin-right: 8px;
+}
+.iconoption
+{
+    font-size: 20px;
+    cursor: pointer;
+}
+.iconoption:hover
+{
+    color: var(--Gris-Primario);
+}
+
+.table-footer
+{
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+}
+.table-footer
+{
+    position: absolute;
+    bottom: 0;
+    float: inline-end;
+}
+.table-footer tr 
+{
+    display: flex;
+    justify-content: space-between;
+    font-weight: bold;
+}
+.table-footer tr td
+{
+    font-weight: bold;
+}
+.table-footer .price
+{
+    text-align: right;
+}
+.table-footer tr td:nth-child(1) 
+{
+    text-align: left;
+}
+.table-footer tr td:nth-child(2) 
+{
+   margin-right: 60px;
+}
+.table-footer tr td:nth-child(2) i
+{
+    font-size: 18px;
+    margin-left: 80px;
+}
+
+
+
+
+/*Estilos para el filtrador de busqueda*/
+.filtro-ventas
+{
+    margin-top: 60px;
+}
+.contenedor-filtros
+{
+    position: relative;
+    width: 100%;
+    border: 1px solid #000;
+    border-radius: 8px;
+    height: 20vh;
+    margin: 20px 0;
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+   
+}
+.filtro1,.filtro2,.filtro3,.filtro4
+{
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+}
+.cont-caja p
+{
+    font-size: 13px;
+    font-weight: 600;
+    margin-bottom: 5px;
+}
+.filtro1>input,.filtro2>input,.filtro3>input,.filtro4>input
+{
+    margin-right: 10px;
+    width: 15px;
+    height: 15px;
+    cursor: pointer;
+}
+.btn-bu
+{
+    margin-right: 10px;
+}
+.btn-bu i
+{
+    background: var(--Azul-Primario);
+    padding: 12px;
+    color: #fff;
+    border-radius: 7px;
+    box-shadow:  0 0 3px rgba(0,0,0, 0.4);
+    cursor: pointer;
+}
+.btn-bu:hover i
+{
+    color: #ccc;
+}

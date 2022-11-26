@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width= , initial-scale=1.0" />
+  <%- include ('partials/contacto-head.ejs') %>
+
+  <title>EAS</title>
+</head>
+<body>
+  
+ 
+  <main>
+    <barra-navegacion> 
+             
+    </barra-navegacion> 
+
+    <section id="contenedor-primario">
+      <div class="contenedor-olas">
+        <svg class="waves" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+        viewBox="0 24 150 28" preserveAspectRatio="none" shape-rendering="auto">
+        <defs>
+        <path id="gentle-wave" d="M-160 44c30 0 58-18 88-18s 58 18 88 18 58-18 88-18 58 18 88 18 v44h-352z" />
+        </defs>
+        <g class="parallax">
+        <use xlink:href="#gentle-wave" x="48" y="0" fill="rgba(255,255,255,0.7" />
+        <use xlink:href="#gentle-wave" x="48" y="3" fill="rgba(2, 82, 193, 0.5)" />
+        <use xlink:href="#gentle-wave" x="48" y="5" fill="rgba(2, 82, 193, 0.7)" />
+        <use xlink:href="#gentle-wave" x="48" y="7" fill="rgba(2, 82, 193, 0.9)" />
+        </g>
+        </svg>
+        </div>      
+        <article class="contenedor-secundario">
+        <article class="nuestra-informacion">
+          <div class="titulo">
+            <h1>Nuestra Información</h1>
+          </div>
+          <div class="informacion">
+           
+            <div class="informacion-datos">
+              <div class="pais">
+                <i class="fa-solid fa-map-location-dot"></i>
+                <h4>
+                  Nicaragua Costa Caribe, Siuna
+                </h4>
+              </div>
+              <div class="correo">
+                <i class="fa-solid fa-envelope"></i>
+                <h1>
+                  innocaribe@gmail.com
+                </h1>
+              </div>
+              <div class="telefono">
+                <i class="fa-solid fa-phone"></i>
+               <h1>
+                +505  8798 3456 
+               </h1> 
+              </div>
+            </div>
+        
+            <div class="redes-sociales">
+              <h4>siguemos en:</h4>
+              <div class="conten-redes">
+                <div class="redes">
+                  <i class="fa-brands fa-facebook"></i>
+                </div>
+                <div class="redes">
+                  <i class="fa-brands fa-twitter"></i>
+                </div>
+                <div class="redes">
+                  <i class="fa-brands fa-youtube"></i>
+                </div>
+                <div class="redes"> 
+                  <i class="fa-brands fa-instagram"></i>
+                </div>
+  
+              </div>
+            
+            </div>
+
+          </div>
+
+        </article>
+        <article class="contacto">
+          <h1>Contacto</h1>
+          <form>
+            <input type="text" id="nombre-usuario" name="nombre" placeholder="Nombre usuario">
+            <input type="text" id="email-usuario" name="email" placeholder="Email">
+            <input  class="mensaje" type="text" id="mensaje-usuario" name="mensaje" placeholder="Mensaje">
+          </form> 
+          <div class="mensaje-enviar">
+            <h1>Enviar</h1>
+          </div>
+
+        </article>
+
+      </article>
+
+    </section>
+    
+  </main>
+ 
+  <footer>
+    <parte-footer></parte-footer>
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+  <script src="./Java-Scrips-frontend/Contacto.js"></script>
+</body>
+</html>
