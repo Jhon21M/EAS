@@ -1,6 +1,3 @@
-
-
-
 //!Creacion de la cabecera o navbar......
 class Cabecera extends HTMLElement
 {
@@ -22,7 +19,7 @@ class Cabecera extends HTMLElement
                     <div class="Menu-1">
                         <div class="contenedor-enlaces">
                             <ul>
-                                <li id="Enlace" class="enlaces-individual"><a href="./Index">Home</a></li>
+                                <li id="Enlace" class="enlaces-individual"><a href="./index">Home</a></li>
                                 <li id="Enlace" class="enlaces-individual"><a href="./Servicio">Service</a></li>
                                 <li id="Enlace" class="enlaces-individual"><a href="./contacto">Contact</a></li>
                                 <li id="Enlace" class="enlaces-individual"><a href="./Planes" id="EP" class="enlace-premium">Conviertete en premium</a></li>
